@@ -1,0 +1,279 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Katering Lezat - Premium Food</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <div class="logo">
+            KATERING
+            <span>LEZAT</span>
+        </div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About Us</a>
+            <a href="#kategori">Kategori</a>
+            <a href="#menu">Menu</a>
+            <a href="#kontak">Contact</a>
+            <a href="#pesanan">🛒</a>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+
+        <div class="hero-text">
+            <small>FRESH FOOD ♥ MADE WITH LOVE</small>
+
+            <h1>
+                Makanan Lezat
+                <span>Setiap Hari.</span>
+            </h1>
+
+            <p>
+                Dari acara keluarga hingga momen spesial,
+                kami menghadirkan hidangan terbaik dengan
+                bahan berkualitas dan rasa istimewa.
+            </p>
+
+            <a href="#menu" class="btn">
+                Pesan Sekarang →
+            </a>
+        </div>
+
+        <div class="hero-image"></div>
+
+    </section>
+
+    <!-- KEUNGGULAN -->
+    <section class="features">
+
+        <div class="feature">
+            <div class="icon">🌿</div>
+            <h3>Bahan Berkualitas</h3>
+            <p>Dipilih dengan teliti.</p>
+        </div>
+
+        <div class="feature">
+            <div class="icon">🍳</div>
+            <h3>Fresh Every Day</h3>
+            <p>Dimasak setiap hari.</p>
+        </div>
+
+        <div class="feature">
+            <div class="icon">🚚</div>
+            <h3>Pengiriman Aman</h3>
+            <p>Tepat waktu dan praktis.</p>
+        </div>
+
+        <div class="feature">
+            <div class="icon">❤️</div>
+            <h3>Pesanan Khusus</h3>
+            <p>Untuk setiap acara.</p>
+        </div>
+
+    </section>
+
+    <!-- KATEGORI -->
+    <section class="category" id="kategori">
+
+        <div class="heading">
+            <small>KATEGORI MENU</small>
+            <h2>Jelajahi <span>Menu Kami</span></h2>
+        </div>
+
+        <div class="category-container">
+
+            <div class="category-card">
+                <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400" alt="Makanan sehat">
+                <h3>Makanan Sehat</h3>
+                <a href="#menu">Lihat Menu →</a>
+            </div>
+            <div class="category-card">
+                <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=400" alt="Menu ayam">
+                <h3>Menu Ayam</h3>
+                <a href="#menu">Lihat Menu →</a>
+            </div>
+
+            <div class="category-card">
+                <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=400" alt="Menu ayam">
+                <h3>Menu Ayam</h3>
+                <a href="#menu">Lihat Menu →</a>
+            </div>
+
+            <div class="category-card">
+                <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400" alt="Menu spesial">
+                <h3>Menu Spesial</h3>
+                <a href="#menu">Lihat Menu →</a>
+            </div>
+
+            <div class="category-card">
+                <img src="https://images.unsplash.com/photo-1547592180-85f173990554?w=400" alt="Paket nasi">
+                <h3>Paket Nasi</h3>
+                <a href="#menu">Lihat Menu →</a>
+            </div>
+
+            <div class="category-card">
+                <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=400" alt="Salad">
+                <h3>Salad</h3>
+                <a href="#menu">Lihat Menu →</a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- MENU TERLARIS -->
+    <section class="best-seller" id="menu">
+
+        <div class="heading">
+            <small>PALING DISUKAI</small>
+            <h2>Menu <span>Terlaris</span></h2>
+        </div>
+
+        <div class="product-container">
+
+            <div class="product">
+                <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400" alt="Nasi sayur">
+                <h3>Nasi Sayur</h3>
+                <div class="price">Rp15.000</div>
+                <div class="rating">★★★★★</div>
+                <button class="cart-btn" onclick="pesan('Nasi Sayur', 15000)">
+                    🛒 Tambah
+                </button>
+            </div>
+
+            <div class="product">
+                <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=400" alt="Ayam panggang">
+                <h3>Ayam Panggang</h3>
+                <div class="price">Rp25.000</div>
+                <div class="rating">★★★★★</div>
+                <button class="cart-btn" onclick="pesan('Ayam Panggang', 25000)">
+                    🛒 Tambah
+                </button>
+            </div>
+
+            <div class="product">
+                <img src="https://images.unsplash.com/photo-1547592180-85f173990554?w=400" alt="Paket komplit">
+                <h3>Paket Komplit</h3>
+                <div class="price">Rp30.000</div>
+                <div class="rating">★★★★★</div>
+                <button class="cart-btn" onclick="pesan('Paket Komplit', 30000)">
+                    🛒 Tambah
+                </button>
+            </div>
+
+            <div class="product">
+                <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400" alt="Pizza spesial">
+                <h3>Pizza Spesial</h3>
+                <div class="price">Rp35.000</div>
+                <div class="rating">★★★★★</div>
+                <button class="cart-btn" onclick="pesan('Pizza Spesial', 35000)">
+                    🛒 Tambah
+                </button>
+            </div>
+
+            <div class="product">
+                <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=400" alt="Salad segar">
+                <h3>Salad Segar</h3>
+                <div class="price">Rp20.000</div>
+                <div class="rating">★★★★★</div>
+                <button class="cart-btn" onclick="pesan('Salad Segar', 20000)">
+                    🛒 Tambah
+                </button>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- PESANAN KHUSUS -->
+    <section class="custom" id="about">
+
+        <div>
+            <small>PESANAN KHUSUS</small>
+
+            <h2>Katering untuk Setiap Acara</h2>
+
+            <p>
+                Acara keluarga, ulang tahun, pernikahan,
+                dan kegiatan lainnya. Kami siap melayani!
+            </p>
+        </div>
+
+        <a href="#pesanan" class="btn">
+            Pesan Katering →
+        </a>
+
+    </section>
+
+    <!-- KERANJANG -->
+    <section class="cart" id="pesanan">
+
+        <h2>Keranjang Pesanan</h2>
+
+        <div class="cart-box">
+
+            <div id="daftar-pesanan">
+                Belum ada pesanan.
+            </div>
+
+            <div class="total">
+                Total: Rp<span id="total">0</span>
+            </div>
+
+            <button class="btn" onclick="checkout()">
+                Pesan Melalui WhatsApp →
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="kontak">
+
+        <div class="footer-content">
+
+            <div>
+                <h2>KATERING LEZAT</h2>
+                <p>Makanan berkualitas, rasa istimewa.</p>
+            </div>
+
+            <div>
+                <h3>Kontak Kami</h3>
+                <p>📍 Kendari, Sulawesi Tenggara</p>
+                <p>📞 0895630398670</p>
+                <p>✉ kateringlezat@gmail.com</p>
+            </div>
+
+            <div>
+                <h3>Jam Pelayanan</h3>
+                <p>Senin - Sabtu</p>
+                <p>08.00 - 20.00 WITA</p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            © 2026 Katering Lezat. Semua Hak Dilindungi.
+        </div>
+
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+
+</body>
+</html>
